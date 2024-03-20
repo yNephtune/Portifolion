@@ -3,53 +3,45 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portifolio</title>
-    <link rel="stylesheet" href="./styles/style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;600;700&family=Inter:wght@100;200;300;400;500&display=swap"
-        rel="stylesheet">
-    <link rel="shortcut icon" href="./assets/fantasma.png" type="image/x-icon">
+    <title>Criptografando</title>
+    <link rel="stylesheet" href="./assets/style/style.css">
+    <style>
+        
+    </style>
 </head>
 
 <body>
-    <header class="cabecalho">
-        <nav class="cabecalho__menu">
-            <a class="cabecalho__menu__link" href="index.html">Home</a>
-            <a class="cabecalho__menu__link" href="about.html">Sobre mim</a>
-        </nav>
+    <header>
+        <img src="./assets/img/logo.png" alt="logo" width="50px">
     </header>
-    <main class="apresentacao">
-        <section class="apresentacao__conteudo">
-            <h1 class="apresentacao__conteudo__titulo">Eleve seu negócio digital a outro nível
-                <strong
-                    class="titulo-destaque"> como um Front-end de qualidade!
-                </strong></h1>
-            <p class="apresentacao__conteudo__texto">Olá! Sou Gabriel Victor, desenvolvedor Front-end júnior com
-                especialização em HTML,
-                CSS e Javascript. Realizo consultorias para pequenos negócios e apoio designers a colocarem
-                em prática seus projetos. Vamos conversar?
-            </p>
-            <div class="apresentacao__links">
-                <h2 class="apresentacao__links__subtitulo">Acesse minhas redes</h2>
-                <a class="apresentacao__links__navegacao" target="_blank" href="https://github.com/yNephtune">
-                    <img src="./assets/github.png">
-                    Github
-                </a>
-                <a class="apresentacao__links__navegacao" target="_blank" href="https://www.linkedin.com/in/gabriel-victor-8134a5224/">
-                    <img src="./assets/linkedin.png">
-                    Linkedin
-                </a>
-            </div>
+    <main>
+        <section class="conteudo">
+
+            <textarea class="text-area" placeholder="Digite seu texto"></textarea>
+
         </section>
-        <img class="apresentacao__imagem" src="./assets/az.jpg" alt="Foto">
+
+        <section class="botoes">
+            <div class="alerta">
+                <img src="./assets/img/alerta.svg" alt="alerta">
+                <p>Somente letras minúsculas e sem acento.</p>
+            </div>
+            <button class="cripto" onclick="btn_encriptar()">Criptografar</button>
+            <button class="descripto" onclick="btn_desencriptar()">Descriptografar</button>
+
+        </section>
+
+        <section class="caixa">
+            <textarea src class="mensagem"></textarea>
+            <button class="copiar" onclick="copiar()">Copiar</button>
+        </section>
+
     </main>
+
     <footer class="rodape">
-        <p>Desenvolvido Atividades de aprendizagem.</p>
     </footer>
+    <script src="./assets/js/script.js"></script>
 </body>
 
 </html>
